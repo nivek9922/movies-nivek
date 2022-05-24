@@ -9,7 +9,6 @@
 
 .title {
     margin-top: 6rem;
-   
     padding-left: 7.5rem;
     color: #fff;
     font-weight: 300;
@@ -21,10 +20,10 @@
     
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .moviesGrid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 136px);
+        grid-template-columns: repeat(auto-fill, 130px);
         gap: 20px;
         padding: 40px;
         justify-content: center;
