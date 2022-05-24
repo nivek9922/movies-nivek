@@ -38,23 +38,25 @@ export function SeriesGrid({search}){
 
  
     return (
-        
-        <InfiniteScroll
-        dataLength={series.length}
-        hasMore={hasMore}
-        next={() => setPage((prevPage) =>  prevPage + 1)}
-        loader={<Spinner />}
-        >
+        <div>
             <header>
                 <h1 className={styles.title}> <b>ÚLTIMAS</b> SERIES DE ESTRENO
-                {/* Search results for "{search}" */}</h1>
+                    {/* Search results for "{search}" */}</h1>
             </header>
 
-            <ul className={styles.moviesGrid}>
-                {series.map((tv) =>
-                    <SerieCard key={series.id} tv={tv} />
-                )}
-            </ul>
-        </InfiniteScroll>
+            <InfiniteScroll
+                dataLength={series.length}
+                hasMore={hasMore}
+                next={() => setPage((prevPage) => prevPage + 1)}
+                loader={<Spinner />}
+            >
+
+                <ul className={styles.moviesGrid}>
+                    {series.map((tv) =>
+                        <SerieCard key={series.id} tv={tv} />
+                    )}
+                </ul>
+            </InfiniteScroll>
+        </div>
     );
 }

@@ -13,7 +13,7 @@ export function SerieCard({tv}){
             className={styles.movieImage} 
             src={imageUrl} 
             alt={tv.title} />
-            <div>{tv.title}</div>
+            <div>{tv.name}</div>
             </Link>
         </li>  
     );

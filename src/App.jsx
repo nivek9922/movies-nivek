@@ -5,6 +5,8 @@ import { LandingPage } from "./pages/LandingPage";
 import { Navbar } from "./components/Navbar/Navbar";
 import { LandingPageSeries } from "./pages/LandingPageSeries";
 import { SerieDetails } from "./pages/SerieDetails";
+/* import Menu from "./components/Menu/Menu"; */
+
 
 export function App() {
     return(
@@ -13,6 +15,8 @@ export function App() {
             <div>
                 <Navbar />
             </div>
+                
+           
             <Routes>
                 <Route  path="/*" element={<LandingPage />} />
                 <Route  path="/series" element={<LandingPageSeries />} />

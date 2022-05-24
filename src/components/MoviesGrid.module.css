@@ -1,4 +1,5 @@
 .moviesGrid{
+  
     display: grid;
     grid-template-columns: repeat(auto-fill, 180px);
     gap: 40px;
@@ -6,13 +7,9 @@
     justify-content: center;
 }
 
-@media (max-width: 400px){
-    .moviesGrid {
-        grid-template-columns: 100%;
-    }
-}
 .title {
-    margin-top: 2rem;
+    margin-top: 6rem;
+   
     padding-left: 7.5rem;
     color: #fff;
     font-weight: 300;
@@ -24,10 +21,31 @@
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
+    .moviesGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 136px);
+        gap: 20px;
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .title{
+
+        margin-top: 6rem;
+        padding: 0rem 0rem 0rem 3.5rem;
+        color: #fff;
+        font-size: 1rem;
+        
+        
+    }
+}
+
+
+/* @media (max-width: 600px) {
     .title {
         text-align: left;
         padding-left: 3rem;
         font-size: 1.5rem;
     }
-}
+} */

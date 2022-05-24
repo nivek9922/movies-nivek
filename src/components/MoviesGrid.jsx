@@ -53,6 +53,7 @@ export function MoviesGrid({search}){
                 next={() => setPage((prevPage) => prevPage + 1)}
                 loader={<Spinner />}
             >
+                 
                 <ul className={styles.moviesGrid}>
                     {movies.map((movie) =>
                         <MovieCard key={movie.id} movie={movie} />
