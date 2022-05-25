@@ -1,9 +1,9 @@
+import { useSearchParams } from "react-router-dom";
 import { SeriesGrid } from "../components/SeriesGrid";
 import { useDebounce } from "../hooks/useDebounce";
-import { useQuery } from "../hooks/useQuery";
 
 export function LandingPageSeries() {
-    const query = useQuery();
+    const [query] = useSearchParams();
     const search = query.get("search");
     const debouncedSearch = useDebounce(search, 300);
 

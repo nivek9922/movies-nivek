@@ -12,11 +12,10 @@ export function App() {
     return(
         
         <div>
-            <div>
+            <header>
                 <Navbar />
-            </div>
+            </header>
                 
-           
             <Routes>
                 <Route  path="/*" element={<LandingPage />} />
                 <Route  path="/series" element={<LandingPageSeries />} />
